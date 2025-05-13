@@ -21,4 +21,4 @@ jobs:
         with:
           configuration-path: .github/pr-scope-labeler.yml
           sync-labels: true
-          repo-token: ${{ secrets.LABELER_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
