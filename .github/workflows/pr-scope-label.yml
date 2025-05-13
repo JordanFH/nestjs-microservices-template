@@ -1,18 +1,24 @@
-name: '🏷️ PR Scope label'
+name: "🏷️ PR Scope label"
 
 on:
   pull_request_target:
     types: [opened, synchronize, reopened]
 
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
 jobs:
   labeler:
-    permissions:
-      contents: write
-      issues: write
-      pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Label PR
+        uses: actions/labeler@v5
         with:
           configuration-path: .github/pr-scope-labeler.yml
           sync-labels: true
+          repo-token: ${{ secrets.LABELER_TOKEN }}
