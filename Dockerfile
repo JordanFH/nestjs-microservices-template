@@ -41,7 +41,7 @@ COPY .swcrc .
 COPY nest-cli.json .
 COPY src src
 
-RUN node --run build && \
+RUN pnpm run build && \
     pnpm prune --prod
 
 FROM base AS production
