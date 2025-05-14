@@ -1,7 +1,7 @@
 {
-  "name": "nestjs-service-template",
+  "name": "nestjs-microservices-template",
   "version": "1.0.0",
-  "description": "Template for new nestjs services",
+  "description": "Template for new nestjs microservices",
   "author": "alberthernandezdev@gmail.com",
   "license": "MIT",
   "type": "module",
@@ -37,7 +37,7 @@
     "lint": "eslint --ignore-path .gitignore . --ext .js,.mjs,cjs,.ts,.mts",
     "lint:fix": "eslint --ignore-path .gitignore . --ext .js,.mjs,cjs,.ts,.mts --fix",
     "lint:file": "eslint --ignore-path .gitignore",
-    "lint:yaml": "chmod +x scripts/lint_yaml.sh && ./scripts/lint_yaml.sh",
+    "lint:yaml": "prettier --write \"**/*.{yml,yaml}\" && prettier --check \"**/*.{yml,yaml}\"",
     "build:clean": "rimraf dist",
     "typos": "chmod +x scripts/check_typos.sh && ./scripts/check_typos.sh"
   },
