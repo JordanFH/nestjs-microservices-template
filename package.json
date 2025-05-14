@@ -37,7 +37,7 @@
     "lint": "eslint --ignore-path .gitignore . --ext .js,.mjs,cjs,.ts,.mts",
     "lint:fix": "eslint --ignore-path .gitignore . --ext .js,.mjs,cjs,.ts,.mts --fix",
     "lint:file": "eslint --ignore-path .gitignore",
-    "lint:yaml": "chmod +x scripts/lint_yaml.sh && ./scripts/lint_yaml.sh",
+    "lint:yaml": "prettier --check \"**/*.{yml,yaml}\" && prettier --write \"**/*.{yml,yaml}\"",
     "build:clean": "rimraf dist",
     "typos": "chmod +x scripts/check_typos.sh && ./scripts/check_typos.sh"
   },
