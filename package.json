@@ -1,7 +1,7 @@
 {
-  "name": "nestjs-service-template",
+  "name": "nestjs-microservices-template",
   "version": "1.0.0",
-  "description": "Template for new nestjs services",
+  "description": "Template for new nestjs microservices",
   "author": "alberthernandezdev@gmail.com",
   "license": "MIT",
   "type": "module",

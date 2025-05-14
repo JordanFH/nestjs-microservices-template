@@ -2,10 +2,10 @@
   <a href="http://nestjs.com/" target="blank"><img src="images/nestjs.png" alt="Nest Logo" width="512" /></a>
 </p>
 
-<h1 align="center">⭐ NestJS Service Template ⭐</h1>
+<h1 align="center">⭐ NestJS Microservices Template ⭐</h1>
 
 <p align="center">
-  Template for new services based on NestJS with the Best Practices and Ready for Production
+  Template for new microservices based on NestJS with the Best Practices and Ready for Production
 </p>
 
 <p align="center">
