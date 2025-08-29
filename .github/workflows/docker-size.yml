@@ -14,7 +14,7 @@ jobs:
     outputs:
       image_size: ${{ steps.docker-base.outputs.image_size }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: ${{ github.base_ref }}
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -46,7 +46,7 @@ jobs:
     outputs:
       image_size: ${{ steps.docker-head.outputs.image_size }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: ${{ github.head_ref }}
       - name: 🐳 Calculate docker image size in ${{ github.head_ref }}
